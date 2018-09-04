@@ -1,21 +1,14 @@
 spring:
   pid:
     file: /opt/apps/ois/logs/pid.pid
-  data:
-    mongodb:
-      uri: mongodb://123.57.210.202:27017,123.57.213.153:27017,123.57.213.153:27018/uqiois
   datasource:
-      url: jdbc:mysql://rm-2zecxu2014z6586dhmo.mysql.rds.aliyuncs.com:3306/uqierp?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      url: jdbc:mysql://localhost:3306/uqierp?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
       username: uplus
       password: Uplus0511
       driverClassName: com.mysql.jdbc.Driver
   jpa:
     show-sql: true
 ocs:
-  order_url: http://101.200.209.72:36010/ocs/interface/orderInterface/queryByUpdateTime.do
-wms:
-  update_order_url: http://www.uqiauto.com/uplus/interface/wms/wmsOrders/updateOrder.do?status=2
-  pay_order_url: http://www.uqiauto.com/uplus/interface/wms/wmsOrders/payOrder.do
-  cancel_order_url: http://www.uqiauto.com/uplus/interface/wms/wmsOrders/updateOrder.do?status=0
+  order_url: http://localhost:36010/ocs/interface/orderInterface/queryByUpdateTime.do
 server:
   port: 37018
